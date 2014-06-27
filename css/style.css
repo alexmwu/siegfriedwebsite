@@ -1,0 +1,17 @@
+.carousel-caption h1{
+	
+}
+
+.item img{
+}
+
+.row img{
+	max-width: 20em;
+}
+
+.plain{
+	font-size: 1.5em;
+	text-align: center;
+	padding:2em;
+	padding-top:0em;
+}
