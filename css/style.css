@@ -1,3 +1,11 @@
+.navbar{
+	/*background-color:#800000;*/
+}
+
+.navbar ul > li > a{
+	color:black;
+}
+
 .carousel-caption h1{
 	
 }
@@ -7,6 +15,11 @@
 
 .row img{
 	max-width: 20em;
+}
+
+.featurette-image{
+	width: auto;
+	height:auto;
 }
 
 .plain{
