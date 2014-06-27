@@ -1,0 +1,30 @@
+.navbar{
+	/*background-color:#800000;*/
+}
+
+.navbar ul > li > a{
+	color:black;
+}
+
+.carousel-caption h1{
+	
+}
+
+.item img{
+}
+
+.row img{
+	max-width: 20em;
+}
+
+.featurette-image{
+	width: auto;
+	height:auto;
+}
+
+.plain{
+	font-size: 1.5em;
+	text-align: center;
+	padding:2em;
+	padding-top:0em;
+}
