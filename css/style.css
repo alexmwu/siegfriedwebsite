@@ -10,7 +10,8 @@
 	
 }
 
-.item img{
+.item > img{
+	background-attachment: fixed;
 }
 
 .row img{
