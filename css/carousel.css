@@ -58,7 +58,6 @@ body {
   margin-right: auto;
   display: block;
   max-height: 45em;
-  min-width: 100%;
 }
 
 /* Declare heights because of positioning of img element */
