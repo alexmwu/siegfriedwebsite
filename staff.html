@@ -71,23 +71,33 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner">
 
         <div class="item active">
-          <img src="images/horns2.jpg" alt="Frosh-O Staff">
+          <img src="images/moversandshakers.jpg" alt="Movers and Shakers">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Frosh-O</h1>
+              <h1>Movers and Shakers</h1>
+              <p>You will meet these guys when you first move in. Feel free to ask questions!</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="images/horns2.jpg" alt="Siegfried">
+          <div class="container">
+            <div class="carousel-caption">
             </div>
           </div>
         </div>
 
-      </div>
+       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
@@ -177,8 +187,8 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#" class="btn btn-lg btn-primary" role="button">Back to top</a></p>
+          <footer>
+        <p class="pull-right"><a id="toTop" href="#" class="btn btn-lg btn-primary btn-rd" role="button"><bold>^</bold></a></p>
         <p>&copy; 2014 Siegfried Hall and the <a href="http://www.nd.edu/" target="_blank">University of Notre Dame</a> &middot; All Rights Reserved &middot; Website by <a href="http://alexmwu.github.io/" target="_blank">Alex Wu</a></p>
       </footer>
 
@@ -191,5 +201,26 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script> 
+    <script src="js/jquery.localScroll.min.js" type="text/javascript"></script> 
+  
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#toTop").css("display", "none");
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 0){
+        $("#toTop").fadeIn("slow");
+       }
+      else {
+        $("#toTop").fadeOut("slow"); 
+          }
+       });
+      $("#toTop").click(function(){
+        $("html, body").animate({
+        scrollTop:0
+      },"slow");
+        });
+    });
+    </script>
   </body>
 </html>
